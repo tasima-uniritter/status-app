@@ -1,0 +1,6 @@
+#cloud-config
+
+runcmd:
+  - git clone git@github.com:gelias/status-app.git /opt/workspace/status-app
+  - chmod +x /opt/workspace/status-app
+  - bash /opt/workspace/status-app/startup.sh &
